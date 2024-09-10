@@ -24,15 +24,15 @@ const Page = () => {
       <div className="w-[3px] h-[80%] bg-[#3B2E77] self-center"></div>
 
       <div className="flex flex-col justify-start items-center p-12 w-1/2 h-screen overflow-y-auto">
-        <p className="text-white font-bold text-[50px] leading-[50px] mb-4" style={{ fontFamily: 'var(--font-inter-medium)', fontWeight:'500' }}>
+        <p className="text-white font-bold text-[50px] leading-[50px] mb-2" style={{ fontFamily: 'var(--font-inter-medium)', fontWeight:'500' }}>
           Votre copilote
         </p>
-        <p className="text-[#40E2C8] font-bold text-[36px] leading-[36px]" style={{ fontFamily: 'var(--font-inter-medium)', fontWeight:'500' }}>
+        <p className="text-[#40E2C8] font-bold text-[36px] leading-[36px] pb-5" style={{ fontFamily: 'var(--font-inter-medium)', fontWeight:'500' }}>
           RSE et Décarbonation
         </p>
 
         
-        <form className="flex flex-col gap-6 w-2/3 max-w-lg">
+        <form className="flex flex-col gap-6 w-2/3 pt-6 max-w-lg">
         <h2 className="text-[22px] text-left text-white mt-6" style={{ fontFamily: "var(--font-inter-medium)" }}>Je configure mon compte</h2>
 
           <div className="grid grid-cols-2 gap-4">
@@ -108,9 +108,9 @@ const Page = () => {
         </form>
 
         <div className="flex justify-center items-center my-6 w-full">
-          <hr className="w-[150px] border-gray-400" />
+          <hr className="w-[150px] border-white" />
           <span className="text-sm text-white mx-3 whitespace-nowrap" style={{ fontFamily: "var(--font-inter-medium)" }}>J'ai déjà un compte ?</span>
-          <hr className="w-[150px] border-gray-400" />
+          <hr className="w-[150px] border-white" />
         </div>
         
         <div className="flex justify-center items-center w-full">
