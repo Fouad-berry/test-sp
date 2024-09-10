@@ -2,17 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'inter';
-  src: url('/public/fonts/Inter_18pt-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
-  font-family: 'inter-light';
+  font-family: 'Inter';
   src: url('/public/fonts/Inter_18pt-Light.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 

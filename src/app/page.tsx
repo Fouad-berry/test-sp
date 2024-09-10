@@ -18,7 +18,7 @@ const Page = () => {
             className="rounded-lg"
           />
         </div>
-        <p className="textBelow text-white text-[44px]" style={{ fontFamily: 'var(--font-inter)', fontWeight:'200' }}>Positive</p>
+        <p className="font-bold text-white text-[44px]" style={{ fontFamily: "var(--font-inter-thin)"}}>Positive</p>
       </div>
 
       <div className="w-[3px] h-[80%] bg-[#3B2E77] self-center"></div>
@@ -31,39 +31,39 @@ const Page = () => {
           RSE et Décarbonation
         </p>
 
-=        <h2 className="text-2xl text-white mb-4 mt-6">Formulaire d'inscription</h2>
+        <h2 className="text-2xl text-left text-white mb-4 mt-6" style={{ fontFamily: "var(--font-inter-medium)" }}>Je configure mon compte</h2>
         
-=        <form className="flex flex-col gap-6 w-2/3 max-w-lg">
+        <form className="flex flex-col gap-6 w-2/3 max-w-lg">
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col">
-              <label className="text-white mb-2">Nom</label>
+              <label className="text-white mb-2" style={{ fontFamily: "var(--font-inter-medium)" }}>Nom</label>
               <input
                 type="text"
-                placeholder="Nom"
+                placeholder="Dubois"
                 className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px]"
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-white mb-2">Prénom</label>
+              <label className="text-white mb-2" style={{ fontFamily: "var(--font-inter-medium)" }}>Prénom</label>
               <input
                 type="text"
-                placeholder="Prénom"
+                placeholder="Pierre"
                 className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px]"
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-white mb-2">Email</label>
+              <label className="text-white mb-2" style={{ fontFamily: "var(--font-inter-medium)" }}>Entreprise</label>
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="Google"
                 className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px]"
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-white mb-2">Téléphone</label>
+              <label className="text-white mb-2" style={{ fontFamily: "var(--font-inter-medium)" }}>Poste</label>
               <input
                 type="text"
-                placeholder="Téléphone"
+                placeholder="Responsable RSE"
                 className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px]"
               />
             </div>
@@ -71,15 +71,15 @@ const Page = () => {
 
           <div className="flex flex-col gap-4">
             <div className="flex flex-col">
-              <label className="text-white mb-2">Adresse</label>
+              <label className="text-white mb-2" style={{ fontFamily: "var(--font-inter-medium)" }}>Adresse mail</label>
               <input
-                type="text"
+                type="email"
                 placeholder="Adresse"
                 className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px]"
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-white mb-2">Ville</label>
+              <label className="text-white mb-2" style={{ fontFamily: "var(--font-inter-medium)" }}>Mot de passe</label>
               <input
                 type="text"
                 placeholder="Ville"
@@ -87,7 +87,7 @@ const Page = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-white mb-2">Mot de passe</label>
+              <label className="text-white mb-2" style={{ fontFamily: "var(--font-inter-medium)" }}>Confirmer mon mot de passe</label>
               <input
                 type="password"
                 placeholder="Mot de passe"
@@ -95,22 +95,30 @@ const Page = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-white mb-2">Confirmer mot de passe</label>
+              <label className="text-white mb-2" style={{ fontFamily: "var(--font-inter-medium)" }}>Confirmer mot de passe</label>
               <input
                 type="password"
                 placeholder="Confirmer mot de passe"
                 className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px]"
               />
             </div>
+            <div className="flex flex-col">
+              <button
+                type="submit"
+                className="w-full h-[35px] p-5 bg-white border border-gray-300 rounded-[30px] mt-6 flex justify-center items-center"
+              >
+              <span className='text-[15px] text-black' style={{ fontFamily: "var(--font-inter-bold)" }}>C'est parti !</span>
+              </button>
+              <span className='text-white text-xs pt-2' style={{ fontFamily: "var(--font-inter-light)" }}>Si ce n'est pas déja fait, contactez nous au 01.55.24.20.92</span>
+            </div>
           </div>
-
-          <button
-            type="submit"
-            className="p-2 bg-green-500 text-white rounded-md hover:bg-green-600 mt-6"
-          >
-            S'inscrire
-          </button>
         </form>
+
+        <div className="flex justify-center items-center my-6 w-full">
+          <hr className="w-[100px] border-gray-400" />
+          <span className="text-sm text-white mx-3" style={{ fontFamily: "var(--font-inter-medium)" }}>J'ai déjà un compte ?</span>
+          <hr className="w-[100px] border-gray-400" />
+        </div>
       </div>
     </div>
   );

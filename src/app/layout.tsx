@@ -2,22 +2,34 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-
-const interFont = localFont({
-  src: [
-    {
-      path: "/fonts/Inter_18pt-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "/fonts/Inter_18pt-Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-  ],
-  variable: "--font-inter",
+const interBold = localFont({
+  src: "/fonts/Inter_18pt-Bold.ttf",
+  weight: "700",
+  style: "normal",
+  variable: "--font-inter-bold",
 });
+
+const interLight = localFont({
+  src: "/fonts/Inter_18pt-Light.ttf",
+  weight: "300",
+  style: "normal",
+  variable: "--font-inter-light",
+});
+
+const interMedium = localFont({
+  src: "/fonts/Inter_18pt-Medium.ttf",
+  weight: "400",
+  style: "normal",
+  variable: "--font-inter-medium",
+});
+
+const interThin = localFont({
+  src: "/fonts/Inter_18pt-Thin.ttf",
+  weight: "400",
+  style: "normal",
+  variable: "--font-inter-thin",
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,9 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${interFont.variable} antialiased`}
-      >
+      <body className={`${interBold.variable} ${interLight.variable} ${interMedium.variable} ${interThin.variable} antialiased`}>
         {children}
       </body>
     </html>
