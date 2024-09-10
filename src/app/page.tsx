@@ -84,15 +84,15 @@ const Page = () => {
               <input
                 type="password"
                 placeholder="......."
-                className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px] pl-4 flex justify-center items-center"
+                className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px] pl-4"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col placeholder-centered">
               <label className="text-white mb-2" style={{ fontFamily: "var(--font-inter-medium)" }}>Confirmer mon mot de passe</label>
               <input
                 type="password"
                 placeholder="......."
-                className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px] pl-4 flex justify-center items-center"
+                className="w-full h-[35px] p-2 border border-gray-300 rounded-[30px] pl-4"
               />
             </div>
             <div className="flex flex-col">
